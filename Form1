@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+    <meta charset="UTF-8">
+<head>
+<title> إستمارة تقديم بلاغ جديد</title>
+<style>
+
+    body {
+        background-color: #FFFAFA;
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 400px;
+  margin: auto;
+  direction: rtl;
+       
+    }
+fieldset {
+    background-color:#FFF5EE;
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin: 20px auto;
+    
+}
+
+label {
+    
+    margin: 10px auto;
+}
+
+legend {
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 20px auto;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+input 
+{
+    
+    margin-bottom: 5px;
+}
+
+
+input[type="text"], input[type="number"], input[type="tel"]
+{
+    padding: 8px;
+    width: 300px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    
+   
+  
+}
+
+select {
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    padding: 8px;
+    padding-bottom: 10px;
+    width: 250px;
+    text-align: right;
+  
+    
+    
+}
+
+
+textarea
+{
+ padding: 1px soild #EEE;
+    height: 200px;
+    width: 330px;
+    resize: none;
+    
+    
+    
+}
+
+input[type="submit"], input[type="reset"]
+{
+    
+  padding: 16px 32px;
+ border: 1px solid #ccc;
+}
+
+hr {
+border: 1px solid #ccc;
+}
+
+h4 {
+
+    text-align: right;
+    color:  #333333;
+}
+
+</style>
+</head>
+
+<body>
+
+    <form>
+
+<fieldset >
+<legend>إستمارة تقديم بلاغ جديد</legend>
+<h4> بيانات مقدم البلاغ</h4>
+
+<label>الأسم الأول :</label>
+<input type="text" name="FName" >
+
+<label>الأسم الثاني:</label>
+<input type="text" name="SName">
+
+<label>القبيلة: </label>
+<input type="text" name="ThName">
+
+<label for="name ID">رقم الجوال: </label>
+<input type="number" id="name ID" name="name ID"  >
+
+<label>رقم الهوية: </label>
+<input type="tel" name="tel" >
+
+<input type="radio" id="national" name="gender" value="national">
+<label for="national"> مواطن</label><br>
+<input type="radio" id="resident" name="gender" value="resident">
+<label for="resident">مقيم</label> <br>
+<br>
+<label>اسم المحافظة :</label>
+<input type="text" name="city" >
+
+<hr>
+
+    <h4> بيانات البلاغ</h4>
+    
+    <label>نوع البلاغ</label> 
+
+   <select>    
+<option value="عام" > 
+عام</option>
+<option value="خاص" >
+خاص</option>
+<option value="تجاري" >
+    تجاري</option>
+  </select>
+   <br> <br>
+  <label for="subject">:تفاصيل البلاغ</label> <br><br>
+  <textarea id="subject" name="subject" rows="7" cols="50" >
+أكتب هنا..
+  </textarea>
+<br> <br>
+  <input type="file" id="myfile" name="myfile" multiple >
+  <br> <br>
+  <samp >
+    <input type="reset" value="مسح البيانات" >
+    <input type="submit" value="ارسال" > 
+     </samp>
+</fieldset>
+
+</form>
+
+</body>
+</html>
